@@ -1,8 +1,10 @@
 # CS135-Final-Project
 
 ## Scope
-This project aims to investigate the impact of integrating formal semantic representations, specifically First Order Logical forms, into a Question Answering (QA) model, and to assess whether this integration improves or hinders the model's performance on typical QA tasks. The approach combines traditional natural language processing (NLP) with formal semantic reasoning to potentially enhance the model's ability to understand and process complex queries and contexts. The model is designed to:
-- Tokenize and encode natural language questions and logical forms.
+This project aims to investigate the impact of integrating formal semantic representations, specifically First Order Logical forms, into a Question Answering (QA) model, and to assess whether this integration improves or hinders the model's performance on typical QA tasks. The approach combines traditional natural language processing (NLP) with formal semantic reasoning to potentially enhance the model's ability to understand and process complex queries and contexts. 
+The model is designed to:
+- Tokenize and encode the natural language questions and/or their corresponding logical forms (first-order logic representations of the questions). The integration of logical forms aims to possibly augment the model's understanding of the question by providing a formal semantic interpretation, alongside the usual natural language input.
+  The input natural languagequestions will be tokenized using the BERT tokenizer, which will convert the text into tokens that the model can process. These tokens are then encoded into numerical representations (embeddings) that capture the semantic meaning of the question. Each question also has a corresponding logical form, which is a formal representation of the question’s semantics. The logical form is also tokenized and encoded in the same way as the question.
 - Perform cross-attention between the encoded question and context.
 - Predict the start and end positions of the answer in the context.
 

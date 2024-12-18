@@ -46,10 +46,12 @@ The code is organized into several key sections, each responsible for a specific
 The code is designed to run in a Jupyter Notebook environment.  
 Before running any code, ensure that all dependencies are installed.  
 You can install the necessary packages directly within the notebook using the following code block:  
-```!pip install torch transformers tqdm```
+```!pip install torch transformers tqdm datasets pandas zhipuai```
 
 Each code cell should be executed sequentially to ensure that the model setup, dataset preparation, and training occur in the correct order. Once trained, the model can be used for inference, and you can tweak various parameters to explore the model's behavior.
 
-To train the baseline model, just execute the code cell inside the 
-> baseline_qa.ipynb
-sequentially, first load the train dataset from the csv file, and preprocess the data, 
+To train the baseline model, just execute the code cell inside the `baseline_qa.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+
+To train the baseline model, just execute the code cell inside the `exp1_logical.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+
+To train the baseline model, just execute the code cell inside the `exp2_nlq_logical.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.

@@ -52,6 +52,6 @@ Each code cell should be executed sequentially to ensure that the model setup, d
 
 To train the baseline model, just execute the code cell inside the `baseline_qa.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
 
-To train the baseline model, just execute the code cell inside the `exp1_logical.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+To perform the experiment 1 (train the model using only logical forms),  just execute the code cell inside the `exp1_logical.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
 
-To train the baseline model, just execute the code cell inside the `exp2_logical_natural.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+To perform the experiment 2 (train the model using combined natural language questions and logical forms),just execute the code cell inside the `exp2_logical_natural.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.

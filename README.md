@@ -43,7 +43,7 @@ The code is organized into several key sections, each responsible for a specific
 
 ### Execution
 
-The code is designed to run in a Jupyter Notebook environment.
-Before running any code, ensure that all dependencies are installed.
-You can install the necessary packages directly within the notebook using the following code block:
-!pip install torch transformers tqdm
+The code is designed to run in a Jupyter Notebook environment.  
+Before running any code, ensure that all dependencies are installed.  
+You can install the necessary packages directly within the notebook using the following code block:  
+```!pip install torch transformers tqdm```

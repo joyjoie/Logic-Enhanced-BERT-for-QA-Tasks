@@ -30,3 +30,16 @@ The training loop involves:
 - Updating the model parameters using the AdamW optimizer.
 
 ### Code Structure
+
+The code is organized into several key sections, each responsible for a specific task in the question answering (QA) pipeline.
+- The BERT tokenizer (AutoTokenizer) is used to tokenize input sequences such as the natural language question, logical form, and context.
+- The AutoModelForQuestionAnswering class from Hugging Face is utilized to load the pre-trained BERT model for question answering tasks.
+- A custom model class (NaturalLanguageQA for baseline, and LogicalFormQA for experiments) extends torch.nn.Module to integrate the BERT model with a cross-attention mechanism (specifically for experiments), allowing the model to attend to both the context and logical form.
+- The tokenize_data function handles tokenization of the context, logical form, and question using the tokenizer. It also ensures that answers are converted into start and end positions.
+- A custom QADataset class is created to hold tokenized examples, and a DataLoader is used for batching the data during training.
+- The find_answer_positions function searches for the start and end indices of the answer in the context.
+- The training loop iterates through the dataset, computing loss (cross-entropy) for each batch, performing backpropagation, and updating model weights using the AdamW optimizer.
+- Errors during batch processing (e.g., invalid answers) are caught, and those batches are skipped without interrupting the training process.
+
+### Execution
+

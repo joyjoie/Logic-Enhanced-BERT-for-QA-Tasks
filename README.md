@@ -21,7 +21,7 @@ The data preparation involves:
 - Finding the start and end positions of the answers in the context.
 - Creating a custom dataset and dataloader for training.
 
-We are using the selected subset (first 5511 rows) from the TriviaQA dataset (https://huggingface.co/datasets/lucadiliello/triviaqa). Each question is used as part of the prompt and converted to the first-order logic form.
+We are using the selected subset (first 5511 rows) from the TriviaQA dataset (https://huggingface.co/datasets/lucadiliello/triviaqa). Each question is used as part of the prompt and converted to the first-order logic form. (train-5117, eval-394)
 
 ### Training
 

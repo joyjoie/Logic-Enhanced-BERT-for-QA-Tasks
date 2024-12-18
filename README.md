@@ -1,7 +1,7 @@
 # CS135-Final-Project
 
 ## Scope
-The scope of this project is to develop a QA model that can handle both natural language questions and logical forms. The model is designed to:
+This project aims to develop a model that utilizes formal semantic representation (logical forms) to improve the model's capability for QA tasks. The model is designed to:
 - Tokenize and encode natural language questions and logical forms.
 - Perform cross-attention between the encoded question and context.
 - Predict the start and end positions of the answer in the context.
@@ -26,7 +26,6 @@ We are using the selected subset (first 5511 rows) from the TriviaQA dataset (ht
 ### Training
 
 The training loop involves:
-- Moving the model and data to the GPU (if available).
 - Performing forward and backward passes.
 - Updating the model parameters using the AdamW optimizer.
 

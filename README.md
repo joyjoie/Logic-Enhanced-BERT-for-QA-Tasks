@@ -8,6 +8,10 @@ The model is designed to:
   - The input natural languagequestions will be tokenized using the BERT tokenizer, which will convert the text into tokens that the model can process. These tokens are then encoded into numerical representations (embeddings) that capture the semantic meaning of the question.
   - Each question also has a corresponding logical form, which is a formal representation of the question’s semantics. The logical form is also tokenized and encoded in the same way as the question.
 - Perform cross-attention between the encoded question and context.
+  - Cross-attention is designed to facilitate the interaction between different input modalities (question and context), ensuring that the model focuses on the most relevant information in the context when predicting the answer.
+  - The context (passage of text that provides the potential answer) is also encoded using the same pre-trained BERT model. The model’s hidden states, representing the encoded contextual information, are passed into the attention mechanism.
+  - A multi-head attention layer is introduced to enable the question to cross-reference the context. This mechanism allows the model to selectively focus on parts of the context that are most relevant to the question.
+  - The output of the attention mechanism is combined with the context, producing a fused representation that includes both question and context-specific information. This is then used to predict the answer.
 - Predict the start and end positions of the answer in the context.
 
 ## Implementation

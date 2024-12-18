@@ -41,7 +41,7 @@ The code is organized into several key sections, each responsible for a specific
 - The training loop iterates through the dataset, computing loss (cross-entropy) for each batch, performing backpropagation, and updating model weights using the AdamW optimizer.
 - Errors during batch processing (e.g., invalid answers) are caught, and those batches are skipped without interrupting the training process.
 
-### Execution
+## Execution
 
 The code is designed to run in a Jupyter Notebook environment.  
 Before running any code, ensure that all dependencies are installed.  

@@ -52,8 +52,8 @@ Each code cell should be executed sequentially to ensure that the model setup, d
 
 To prepare the dataset, execute the code cell inside the `data_preparation.ipynb`, load the data from TriviaQA dataset, then prompt the LLM to get the formal semantic representation and save them to a csv file.
 
-To train the baseline model, just execute the code cell inside the `baseline_qa.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+To train the baseline model, execute the code cell inside the `baseline_qa.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
 
-To perform the experiment 1 (train the model using only logical forms),  just execute the code cell inside the `exp1_logical.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+To perform the experiment 1 (train the model using only logical forms), execute the code cell inside the `exp1_logical.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
 
-To perform the experiment 2 (train the model using combined natural language questions and logical forms),just execute the code cell inside the `exp2_logical_natural.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+To perform the experiment 2 (train the model using combined natural language questions and logical forms), execute the code cell inside the `exp2_logical_natural.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.

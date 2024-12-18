@@ -54,6 +54,6 @@ To prepare the dataset, execute the code cell inside the `data_preparation.ipynb
 
 To train the baseline model, execute the code cell inside the `baseline_qa.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
 
-To perform the experiment 1 (train the model using only logical forms), execute the code cell inside the `exp1_logical.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+To perform the experiment 1 (train the BERT with only the formal semantic representations (logic forms)), execute the code cell inside the `exp1_logical.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
 
-To perform the experiment 2 (train the model using combined natural language questions and logical forms), execute the code cell inside the `exp2_logical_natural.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.
+To perform the experiment 2 (train the BERT with the combination of natural language and formal semantic representations), execute the code cell inside the `exp2_logical_natural.ipynb` sequentially, first load the train dataset from the csv file, intialize the custom model and execute the training loop, load the evaluate dataset, and execute the evaluation loop.

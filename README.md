@@ -1,7 +1,7 @@
 # CS135-Final-Project
 
 ## Scope
-This project aims to develop a model that utilizes formal semantic representation (logical forms) to improve the model's capability for QA tasks. The model is designed to:
+This project aims to investigate the impact of integrating formal semantic representations, specifically First Order Logical forms, into a Question Answering (QA) model, and to assess whether this integration improves or hinders the model's performance on typical QA tasks. The approach combines traditional natural language processing (NLP) with formal semantic reasoning to potentially enhance the model's ability to understand and process complex queries and contexts. The model is designed to:
 - Tokenize and encode natural language questions and logical forms.
 - Perform cross-attention between the encoded question and context.
 - Predict the start and end positions of the answer in the context.

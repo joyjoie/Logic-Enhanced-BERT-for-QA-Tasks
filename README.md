@@ -47,3 +47,9 @@ The code is designed to run in a Jupyter Notebook environment.
 Before running any code, ensure that all dependencies are installed.  
 You can install the necessary packages directly within the notebook using the following code block:  
 ```!pip install torch transformers tqdm```
+
+Each code cell should be executed sequentially to ensure that the model setup, dataset preparation, and training occur in the correct order. Once trained, the model can be used for inference, and you can tweak various parameters to explore the model's behavior.
+
+To train the baseline model, just execute the code cell inside the 
+> baseline_qa.ipynb
+sequentially, first load the train dataset from the csv file, and preprocess the data, 

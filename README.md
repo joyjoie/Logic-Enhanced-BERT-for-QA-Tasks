@@ -13,6 +13,8 @@ The model is designed to:
   - A multi-head attention layer is introduced to enable the question to cross-reference the context. This mechanism allows the model to selectively focus on parts of the context that are most relevant to the question.
   - The output of the attention mechanism is combined with the context, producing a fused representation that includes both question and context-specific information. This is then used to predict the answer.
 - Predict the start and end positions of the answer in the context.
+  - After the fusion of the question and context (via the cross-attention mechanism), a Question Answering head (linear layer) is applied to predict the span of the answer. The output of this layer consists of two logits: one for the start position and one for the end position.
+  - During training, the model computes the loss by comparing the predicted start and end positions with the actual positions of the answer in the context. This helps the model adjust its weights to improve its performance over time.
 
 ## Implementation
 ### Model Architecture
